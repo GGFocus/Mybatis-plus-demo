@@ -22,6 +22,11 @@ public class JsonbTest {
         testDataMapper.insert(testData);
         TestData dbTestData = testDataMapper.selectById(testData.getId());
         System.out.println(dbTestData.getContent());
+
+        System.out.println("11");
+
+
+
         Assertions.assertEquals(testData.getContent().getTitle(), dbTestData.getContent().getTitle());
     }
 }

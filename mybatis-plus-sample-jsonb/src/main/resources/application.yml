@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://127.0.0.1:5432/test
+    url: jdbc:postgresql://127.0.0.1:5432/mybatis-plus
     username: postgres
-    password: 123456
+    password: root
 
 # Logger Config
 logging:
