@@ -26,8 +26,6 @@ public class JsonbTest {
         System.out.println("11");
         System.out.println("1111");
 
-
-
         Assertions.assertEquals(testData.getContent().getTitle(), dbTestData.getContent().getTitle());
     }
 }

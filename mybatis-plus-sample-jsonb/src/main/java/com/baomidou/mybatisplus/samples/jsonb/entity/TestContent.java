@@ -1,10 +1,13 @@
 package com.baomidou.mybatisplus.samples.jsonb.entity;
 
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
-@Getter
-@Setter
+
+@Data
+@ToString
 public class TestContent {
     private String title;
     private String content;
