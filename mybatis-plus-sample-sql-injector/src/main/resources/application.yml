@@ -1,13 +1,9 @@
 spring:
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:test
-    username: sa
-    password: 123456
-  sql:
-    init:
-      schema-locations: classpath:db/schema-h2.sql
-      mode: always
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://127.0.0.1:5432/mybatis-plus
+    username: postgres
+    password: root
 
 mybatis-plus:
   global-config:

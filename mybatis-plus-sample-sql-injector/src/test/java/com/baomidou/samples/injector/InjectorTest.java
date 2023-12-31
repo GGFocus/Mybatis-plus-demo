@@ -5,7 +5,7 @@ import com.baomidou.samples.injector.mapper.StudentMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.util.Lists;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -50,6 +50,7 @@ public class InjectorTest {
         System.out.println(select);
 
         log.info("--------------------------------------deleteAll-------------------------------------------------------");
-        //studentMapper.deleteAll();
+        Student one = studentMapper.findOne(ids.get(0));
+        System.out.println("studentMapper.findOne:" + one);
     }
 }
