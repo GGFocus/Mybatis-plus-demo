@@ -4,7 +4,11 @@ import com.baomidou.samples.injector.entity.Student;
 import com.baomidou.samples.injector.mapper.StudentMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.util.Lists;
+
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -17,7 +21,8 @@ import java.util.stream.Collectors;
  * @author nieqiurong 2018/8/11 20:34.
  */
 @Slf4j
-@SpringBootTest
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest(classes= Application.class)
 public class InjectorTest {
 
     @Autowired
@@ -45,6 +50,6 @@ public class InjectorTest {
         System.out.println(select);
 
         log.info("--------------------------------------deleteAll-------------------------------------------------------");
-        studentMapper.deleteAll();
+        //studentMapper.deleteAll();
     }
 }
